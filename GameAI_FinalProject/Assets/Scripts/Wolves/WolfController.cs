@@ -14,11 +14,11 @@ public class WolfController : MonoBehaviour
     private bool hasLockedOnDeer = false; // Flag to track if the wolf has locked onto a deer
     private float timer;
 
+    public bool showRays = true;
+
     private bool inAttackMode = false;
     private Vector3 circlePosition;
     private Quaternion startRotation;
-
-    private bool showRays = false;
 
     void Start()
     {
@@ -44,14 +44,7 @@ public class WolfController : MonoBehaviour
 
         if (!hasLockedOnDeer)
         {
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                showRays = !showRays; // Toggle ray visibility on "D" key press
-            }
-            if (showRays) // Check if showRays is true to draw rays
-            {
-                DetectDeer();
-            }
+            DetectDeer();
         }
         else if (deer != null)
         {
@@ -79,6 +72,7 @@ public class WolfController : MonoBehaviour
 
         for (int i = 0; i < raysCount; i++)
         {
+            
             Quaternion rayRotation = Quaternion.AngleAxis(-wolfCamera.fieldOfView / 2 + angleIncrement * i, wolfCamera.transform.up);
             Vector3 direction = rayRotation * wolfCamera.transform.forward;
 
@@ -96,6 +90,18 @@ public class WolfController : MonoBehaviour
             else
             {
                 Debug.DrawRay(wolfCamera.transform.position, direction * 20f, Color.blue); // Draw rays even if no deer detected
+            }
+
+            if (showRays) // Check if the showRays flag is true
+            {
+                if (hit.collider != null)
+                {
+                    Debug.DrawRay(wolfCamera.transform.position, direction * hit.distance, Color.red); // Draw the ray in the Scene view for debugging
+                }
+                else
+                {
+                    Debug.DrawRay(wolfCamera.transform.position, direction * 20f, Color.blue); // Draw rays even if no deer detected
+                }
             }
         }
 
@@ -146,5 +152,11 @@ public class WolfController : MonoBehaviour
         NavMeshHit navHit;
         NavMesh.SamplePosition(randomDirection, out navHit, distance, layermask);
         return navHit.position;
+    }
+
+    // Method to toggle ray visibility
+    public void ToggleRaysVisibility()
+    {
+        showRays = !showRays; // Toggle the showRays variable
     }
 }
