@@ -2371,6 +2371,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 122206172}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &131086159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2477219742316424569, guid: f01337c4b1a6e774cb6a6f4c3dd02910,
+    type: 3}
+  m_PrefabInstance: {fileID: 2029897494}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &133370309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5389,7 +5395,7 @@ PrefabInstance:
     - target: {fileID: 4714319432801619058, guid: 590b1bd4fe389974aa6b167fb5531200,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4714319432801619058, guid: 590b1bd4fe389974aa6b167fb5531200,
         type: 3}
@@ -9522,7 +9528,7 @@ PrefabInstance:
     - target: {fileID: 8195136750953793563, guid: 9413d3d671a2b3743ad92a747b8a3e93,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8195136750953793563, guid: 9413d3d671a2b3743ad92a747b8a3e93,
         type: 3}
@@ -9643,8 +9649,14 @@ MonoBehaviour:
     colorParams: []
     colorParamsNames: []
     colorParamsLostDefaultValue: 
-    objectParams: []
-    objectParamsNames: []
+    objectParams:
+    - {fileID: 326732808}
+    - {fileID: 131086159}
+    - {fileID: 557737083}
+    objectParamsNames:
+    - treasure
+    - floor
+    - myself
     objectParamsLostDefaultValue: 
     layerMaskParams: []
     layerMaskParamsNames: []
@@ -12340,14 +12352,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764520917}
-  m_LocalRotation: {x: 0.12544899, y: 0.87648785, z: -0.27343112, w: 0.37585494}
-  m_LocalPosition: {x: -93.046974, y: 10.007597, z: 32.908924}
+  m_LocalRotation: {x: 0.097985104, y: 0.91315055, z: -0.16789246, w: 0.3582836}
+  m_LocalPosition: {x: -76.02, y: 4.73, z: 23.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 35.003, y: 133.896, z: 1.005}
+  m_LocalEulerAnglesHint: {x: 22.138, y: 137.864, z: 3.63}
 --- !u!1001 &788498945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32425,7 +32437,7 @@ Transform:
   - {fileID: 1799843360}
   - {fileID: 728116506}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1956778645
 PrefabInstance:
@@ -33862,7 +33874,7 @@ PrefabInstance:
     - target: {fileID: 2477219742316424569, guid: f01337c4b1a6e774cb6a6f4c3dd02910,
         type: 3}
       propertyPath: m_Name
-      value: LowpolyTerrain (1)
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 2477219742316589401, guid: f01337c4b1a6e774cb6a6f4c3dd02910,
         type: 3}
