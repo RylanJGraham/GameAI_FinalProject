@@ -3,6 +3,9 @@
 ## Introduction
 CITM-UPC Game AI Final Project. This Project is a compilation of all work completed throughout the course. Project includes work with agent Pathfinding, Wandering, Camera Detection, Waypoints, Behavior Bricks, Flocking, and Formation Motion. 
 
+## Project Github Repository
+Click [here](https://github.com/RylanJGraham/GameAI_FinalProject) to check out the project's Github repository, where you will find the source code.
+
 ## Controls and Menu Features
 ### Menu
 ![Camera Selection](img/Menu.png)
