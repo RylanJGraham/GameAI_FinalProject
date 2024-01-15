@@ -4,7 +4,7 @@
 CITM-UPC Game AI Final Project. This Project is a compilation of all work completed throughout the course. Project includes work with agent Pathfinding, Wandering, Camera Detection, Waypoints, Behavior Bricks, Flocking, and Formation Motion. 
 
 ## Controls and Menu Features
-#### Menu
+### Menu
 ![Camera Selection](img/Menu.png)
 
 Press esc to open the Projects Menu system, which allows the user to navigate to various cameras illustrating AI behavior, and reset the scene. 
