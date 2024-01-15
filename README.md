@@ -36,6 +36,10 @@ Push the Restart Scene Button to Reset all Behavior
 | Lizard Behavior    | **Wander** | group of Otters navigate the scene following the river. | <img src="img/LizardMovement.gif" alt="GIF 1" width="200" height="150"> | *[Lizard Controller](https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Lizard/LizardWander.cs) |
 | Villager Behavior    | **Wander** | A group of villagers gather around the campfire. Villagers stay within a flock radius and do not leave the area.| <img src="img/VillagersMovement.gif" alt="GIF 1" width="200" height="150"> | *[Villager Controller](https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Deer/DeerController.cs)  *[Vilager Manager](https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Deer/DeerManager.cs)  |
 
+## Feature Demo Video (Click To Open)
+[![Video](img/Video.png)](https://youtu.be/re5zXT0nyDQ?si=peYu1NAStD4Vv2tN)
+
+
 ## Developers
 ![](https://raw.githubusercontent.com/Historn/PinBall_Game/master/TeamPhotos/rylangraham.jpg)
  - [Rylan Graham](https://github.com/RylanJGraham)
