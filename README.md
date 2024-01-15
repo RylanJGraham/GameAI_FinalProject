@@ -40,7 +40,7 @@ Push the Restart Scene Button to Reset all Behavior
 | Villager Behavior    | **Wander** | A group of villagers gather around the campfire. Villagers stay within a flock radius and do not leave the area.| <img src="img/VillagersMovement.gif" alt="GIF 1" width="200" height="150"> | *[Villager Controller](https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Deer/DeerController.cs)  *[Vilager Manager](https://github.com/RylanJGraham/GameAI_FinalProject/blob/main/GameAI_FinalProject/Assets/Scripts/Deer/DeerManager.cs)  |
 
 ## Feature Demo Video (Click To Open)
-[![Video](img/Video.png)](https://youtu.be/re5zXT0nyDQ?si=peYu1NAStD4Vv2tN)
+[![Video](img/Video.png)](https://youtu.be/TUyRrbRZivI)
 
 
 ## Developers
